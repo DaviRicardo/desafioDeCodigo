@@ -6,14 +6,22 @@ public class Main {
         String input;
 
         opcaoMenu = Integer.parseInt(JOptionPane.showInputDialog(
-                null, "1 - Reverter String", "Escolha uma opção: ", JOptionPane.INFORMATION_MESSAGE));
+                null, """
+                        1 - Reverter String
+                        2 - Remover duplicatas
+                        """, "Escolha uma opção", JOptionPane.INFORMATION_MESSAGE));
 
         switch (opcaoMenu) {
-            case 1:
+            case 1 -> {
                 Ex1 exercicio1 = new Ex1();
                 input = JOptionPane.showInputDialog("Digite uma frase: ");
                 JOptionPane.showMessageDialog(null, exercicio1.inverterPalavras(input), "Frase invertida", JOptionPane.INFORMATION_MESSAGE);
-                break;
+            }
+            case 2 -> {
+                Ex2 exercicio2 = new Ex2();
+                input = JOptionPane.showInputDialog("Digite uma frase: ");
+                JOptionPane.showMessageDialog(null, exercicio2.removerDuplicados(input), "String sem duplicatas", JOptionPane.INFORMATION_MESSAGE);
+            }
         }
     }
 }
