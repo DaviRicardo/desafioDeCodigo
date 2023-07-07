@@ -9,6 +9,7 @@ public class Main {
                         1 - Reverter String
                         2 - Remover duplicatas
                         3 - Substring palindrômica
+                        4 - Primeira letra maiúscula
                         """, "Escolha uma opção", JOptionPane.INFORMATION_MESSAGE));
 
 
@@ -27,6 +28,11 @@ public class Main {
                 Ex3 exercicio3 = new Ex3();
                 input = JOptionPane.showInputDialog("Digite uma string: ");
                 JOptionPane.showMessageDialog(null, "Maior substring palindrômica: " + exercicio3.maiorStringPalindroma(input), "Substring extraída", JOptionPane.INFORMATION_MESSAGE);
+            }
+            case 4 -> {
+                Ex4 exercicio4 = new Ex4();
+                input = JOptionPane.showInputDialog("Digite uma frase: ");
+                JOptionPane.showMessageDialog(null, exercicio4.converterMaisculo(input), "Frase com primeiras letras maísculas", JOptionPane.INFORMATION_MESSAGE);
             }
         }
     }
