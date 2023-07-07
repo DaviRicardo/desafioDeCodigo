@@ -1,5 +1,4 @@
 import javax.swing.*;
-import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         int opcaoMenu;
@@ -9,7 +8,9 @@ public class Main {
                 null, """
                         1 - Reverter String
                         2 - Remover duplicatas
+                        3 - Substring palindrômica
                         """, "Escolha uma opção", JOptionPane.INFORMATION_MESSAGE));
+
 
         switch (opcaoMenu) {
             case 1 -> {
@@ -21,6 +22,11 @@ public class Main {
                 Ex2 exercicio2 = new Ex2();
                 input = JOptionPane.showInputDialog("Digite uma frase: ");
                 JOptionPane.showMessageDialog(null, exercicio2.removerDuplicados(input), "String sem duplicatas", JOptionPane.INFORMATION_MESSAGE);
+            }
+            case 3 -> {
+                Ex3 exercicio3 = new Ex3();
+                input = JOptionPane.showInputDialog("Digite uma string: ");
+                JOptionPane.showMessageDialog(null, "Maior substring palindrômica: " + exercicio3.maiorStringPalindroma(input), "Substring extraída", JOptionPane.INFORMATION_MESSAGE);
             }
         }
     }
