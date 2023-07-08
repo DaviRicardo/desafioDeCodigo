@@ -10,6 +10,7 @@ public class Main {
                         2 - Remover duplicatas
                         3 - Substring palindrômica
                         4 - Primeira letra maiúscula
+                        5 - Anagrama de um palíndromo
                         """, "Escolha uma opção", JOptionPane.INFORMATION_MESSAGE));
 
 
@@ -33,6 +34,11 @@ public class Main {
                 Ex4 exercicio4 = new Ex4();
                 input = JOptionPane.showInputDialog("Digite uma frase: ");
                 JOptionPane.showMessageDialog(null, exercicio4.converterMaisculo(input), "Frase com primeiras letras maísculas", JOptionPane.INFORMATION_MESSAGE);
+            }
+            case 5 -> {
+                Ex5 exercicio5 = new Ex5();
+                input = JOptionPane.showInputDialog("Digite um anagrama de um palíndromo: ");
+                JOptionPane.showMessageDialog(null, exercicio5.anagramaPalindromo(input), "Resultado da análise", JOptionPane.INFORMATION_MESSAGE);
             }
         }
     }
