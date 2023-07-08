@@ -7,6 +7,7 @@ public class Ex2 {
     public Ex2() {
 
     }
+
     public String removerDuplicados(String str) {
         StringBuilder novaString = new StringBuilder();
 

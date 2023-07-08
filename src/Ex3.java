@@ -8,6 +8,7 @@ public class Ex3 {
     public Ex3() {
 
     }
+
     public String maiorStringPalindroma(String input) {
         if (input == null || input.length() < 2) {
             return input;

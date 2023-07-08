@@ -7,6 +7,7 @@ public class Ex4 {
     public Ex4() {
 
     }
+
     public String converterMaisculo(String input) {
         StringBuilder resultado = new StringBuilder();
         boolean verificarMaisculo = true; // Determina se o próximo caractere encontrado deve ou não ser maísculo

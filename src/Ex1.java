@@ -7,6 +7,7 @@ public class Ex1 {
     public Ex1() {
 
     }
+
     public String inverterPalavras(String frase) {
         String[] palavras = frase.split(" ");
         StringBuilder fraseInvertida = new StringBuilder();
